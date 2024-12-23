@@ -1,0 +1,165 @@
+/* Start Globle */
+.gray{
+    color: rgba(209, 209, 209, 1);
+}
+/* Start header */
+.nav-link{
+    font-size: 22px;
+}
+/* End header */
+
+.border{
+    border: 1px solid gray;
+}
+
+/* Start Main */
+
+main .text h2{
+    font-size: calc(2.5rem*2);
+} 
+@media(max-width:768px){
+    main .text h2{
+        font-size: 3.5rem;
+    } 
+}
+
+
+main .sec-img div{
+    width: fit-content;
+}
+
+main .sec-img .square{
+    width: 166px;
+    height: 147px;
+    border: 2px solid black;
+    top:-20px;
+    left: -25px;
+    z-index: -1;
+}
+
+main .sec-img .square-row{
+    width: 101px;
+    height: 101px;
+    background-color: black;
+    bottom: 0;
+    right: -70px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+main .counters p{
+    color: rgba(84, 84, 84, 1);
+}
+/* End Main */
+/* Start section-1 */
+.section-1 .container{
+    margin-top: 100px;
+}
+.section-1 .section-header .line span{
+    height: 0;
+    width: 100px;
+    height: 0;
+    border: 1px solid black;
+}
+
+
+/* End section-1 */
+
+/* Start section-2 */
+.section-2 .text{
+    border-bottom: 1px solid rgba(84, 84, 84, 1);
+}
+/* End section-2 */
+
+/* Start section-2 */
+.section-3 .text-item .position-relative::after{
+    position: absolute;
+    content: "";
+    height: 80px;
+    border-left: 2px solid rgba(155, 155, 155, 1);
+    top: 50px;
+    right: 37.5px;
+}
+
+.section-3 .text-item .position-relative:hover::after{
+    border-left: 2px solid blue;
+}
+
+
+.accordion-button::after {
+    content:unset !important ; 
+}
+
+.accordion-button.collapsed .exchang::before {
+    content: '+'; 
+    margin-left: auto;
+    font-size: 2.5rem;
+}
+
+
+.accordion-button:not(.collapsed) .exchang::before{
+    content: '-'; 
+    margin-left: auto;
+    font-size: 2.5rem; 
+}
+
+/* End section-2 */
+/* start section-4 */
+
+.section-4 .position-absolute{
+    top:25%;
+    left: 18%;
+}
+
+
+@media (max-width: 992px) {
+    .section-4 .position-absolute {
+        position:static !important; 
+    }}
+
+/* End section-4 */
+
+/* Start section-5 */
+.section-5 .email .btn{
+    left: calc(100% - 190px);
+    top: 10px;
+}
+
+.section-5 .email .icon{
+    top: 8px;
+    left:16px;
+}
+
+.section-5 .email {
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media (max-width: 992px) {
+    .section-5 .email {
+        width: 90%; 
+    }
+}
+@media (max-width: 768px) {
+        .section-5 .email {
+            width: 99%; 
+        }
+        .section-5 .email .btn{
+            left: calc(100% - 120px);
+        }
+    }
+
+/* End section-5 */
+
+/* Start Footer */
+footer .footer-logo{
+    filter: invert(1);
+}
+
+footer ul li:first-child{
+    color: white;
+}
+/* End Footer  */
